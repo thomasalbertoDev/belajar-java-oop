@@ -1,12 +1,12 @@
 public class PersonApp {
     public static void main(String[] args) {
         // Membuat Object
-        var person1 = new Person();
-        Person person2 = new Person();
-        Person person3 = new Person();
+        var person = new Person();
+        person.name = "Thomas Alberto";
+        person.address = "Jl.Surya Suci";
 
-        System.out.println(person1);
-        System.out.println(person2);
-        System.out.println(person3);
+        System.out.println(person.name);
+        System.out.println(person.address);
+        System.out.println(person.county);
     }
 }
