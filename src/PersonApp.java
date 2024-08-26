@@ -8,5 +8,7 @@ public class PersonApp {
         System.out.println(person.name);
         System.out.println(person.address);
         System.out.println(person.county);
+
+        person.sayHello("Budi");
     }
 }
