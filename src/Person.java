@@ -6,9 +6,9 @@ class Person {
     final String county = "Indonesia"; // Data tidak bisa diubah lagi tapi bisa diakses
 
     // Constructor dalam Java merupakan method yang pertama kali dijalankan saat sebuah object dibuat
-    Person(String paramName, String paramAddress){
-        name = paramName;
-        address = paramAddress;
+    Person(String name, String address){
+        this.name = name;
+        this.address = address;
     }
 
     // Overloading Constructor (Merupakan kemampuan membuat method yang sama namun dengan parameter yang berbeda)
@@ -21,7 +21,7 @@ class Person {
         this(null);
     }
 
-    public void sayHello(String paramName){
-        System.out.println("Hello " + paramName + ", My name is " + name);
+    public void sayHello(String name){
+        System.out.println("Hello " + name + ", My name is " + this.name);
     }
 };
