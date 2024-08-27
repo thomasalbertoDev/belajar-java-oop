@@ -22,6 +22,18 @@ public class PolymorphismApp {
 
     // Method Polymorphism 
     static void sayHello(Employee  employee) {
-        System.out.println("Hello " + employee.name);
+      if(employee instanceof VicePresident){
+        // Casts (Casts merupakan proses merubah tipe data bukan primitf)
+        // Pada contoh ini, employee menjadi VicePresident
+        VicePresident vicePresident = (VicePresident) employee;
+        System.out.println("Hello, My name is " + vicePresident.name + " and I am VP");
+      } else if(employee instanceof Manager){
+        // Casts (Casts merupakan proses merubah tipe data bukan primitf)
+        // Pada contoh ini, employee menjadi Manager
+        Manager manager = (Manager) employee;
+        System.out.println("Hello, My name is " + manager.name + " and I am Manager");
+      } else {
+        System.out.println("Hello, My name is " + employee.name + " and I am Employee");
+      }
     }
 }
