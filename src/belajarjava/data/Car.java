@@ -1,6 +1,6 @@
 package belajarjava.data;
 
-public interface Car {
+public interface Car extends HasBrand, IsMaintenance {
 
     void drive();
 
