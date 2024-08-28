@@ -11,4 +11,10 @@ public class Product {
         this.name = name;
         this.price = price;
     }
+
+    // toString() method 
+    @Override
+    public String toString(){
+        return name + " - " + price;
+    }
 }
