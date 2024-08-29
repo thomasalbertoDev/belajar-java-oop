@@ -8,11 +8,7 @@ public class HelloWorldApp {
         // Anonymous class merupakan kemampuan membuat class sekaligus object secara langsung
         HelloWorld english = new HelloWorld() {
 
-<<<<<<<<<<<<<<  ✨ Codeium Command ⭐  >>>>>>>>>>>>>>>>
-            /**
-             * Menampilkan pesan "Hello" tanpa nama.
-             */
-<<<<<<<  54191491-c7fc-4ac0-a28b-bbb70b7edaf8  >>>>>>>            public void sayHello() {
+            public void sayHello() {
                 System.out.println("Hello");
             }
 
