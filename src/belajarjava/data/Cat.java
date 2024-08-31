@@ -1,5 +1,8 @@
 package belajarjava.data;
 
+import belajarjava.annotation.Fancy;
+
+@Fancy(name = "Kitty", tags = {"animal", "cat"})
 public class Cat extends Animal {
 
     @Override
