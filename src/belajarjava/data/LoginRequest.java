@@ -4,14 +4,13 @@ package belajarjava.data;
 public record LoginRequest(String username, String password) {
 
     // Compact Constructor (Constructor tanpa parameter dan tanda () )
-    public LoginRequest{
-        System.out.println("Record Constructor");
-    }
+    // public LoginRequest  {
+    //     System.out.println("Record Constructor");
+    // }
 
     // Record Overloading
-    public LoginRequest(String username){
+    public LoginRequest(String username) {
         this(username, "password");
     }
 
-    
 }
